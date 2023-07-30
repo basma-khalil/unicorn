@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Unicorn</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Unicorn theme.">
+    <meta name="theme-color" content="#222">
+    <meta name="apple-mobile-web-app-status-bar" content="#222">
+    <link rel="shortcut icon" href="./images/icons/favicon.ico" type="./image/x-icon">
+    <link rel="apple-touch-icon" href="./images/apple-touch-icon.webp">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"></noscript>
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"> -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Almarai:wght@400;700;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Almarai:wght@400;700;800&display=swap"></noscript>
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Almarai:wght@400;700;800&display=swap"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/splidejs/4.1.4/css/splide.min.css">
+    <link rel="preload" href="https://unpkg.com/aos@2.3.1/dist/aos.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"></noscript>
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"> -->
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="manifest" href="./manifest.json">
+</head>
+
+<body>
+    <!-- Start Skip To Main Content -->
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <!-- End Skip To Main Content -->
+
+    <div class="site-wrap">
+
+        <!-- Start Header -->
+        <header id="site-header" class="site-header">
+
+            <!-- Start Header Logo -->
+            <div class="container flex--row">
+                <section class="header__logo">
+                    <h1 class="site-logo"><a href="./index.html">unicorn</a></h1>
+                </section>
+
+                <!-- Start Header Navigation -->
+                <nav class="flex--row">
+                    <ul>
+                        <li><a href="./index.html">home</a></li>
+                        <li><a href="./p/test.html">about</a></li>
+                        <li><a href="./p/test.html">stories</a></li>
+                        <li><a href="./p/test.html">hello</a></li>
+                    </ul>
+
+                    <!-- Start Header Hamburger -->
+                    <button class="toggle-menu" aria-label="open menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </nav>
+            </div>
+        </header>
+        <!-- End Header -->
+
+        <!-- Start Fullscreen Menu -->
+        <div class="fullscreen-menu flex--col text--center" aria-owns="site-header">
+            <nav>
+                <ul>
+                    <li><a href="./index.html">home</a></li>
+                    <li><a href="./p/test.html">about</a></li>
+                    <li><a href="./p/test.html">stories</a></li>
+                    <li><a href="./p/test.html">hello</a></li>
+                    <li class="lang"><a href="./ar/index.html">العربية</a></li>
+                </ul>
+            </nav>
+
+            <div class="theme">
+                <input type="checkbox" class="theme-btn" id="theme-btn" aria-checked="false">
+                <label for="theme-btn" class="toggle-theme flex--row" aria-label="Toggle Dark Mode">
+                    <svg class="sun" aria-labelledby="sun" role="img" viewBox="0 0 96 96" width="96px" height="96px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <!-- Icons8 - https://icons8.com/icon/URphhfIjBd0M/sun -->
+                        <title id="sun">Sun</title>
+                        <g>
+                            <path d="M 48 28.5 C 58.769531 28.5 67.5 37.230469 67.5 48 C 67.5 58.769531 58.769531 67.5 48 67.5 C 37.230469 67.5 28.5 58.769531 28.5 48 C 28.5 37.230469 37.230469 28.5 48 28.5 Z M 48 61.5 C 55.457031 61.5 61.5 55.457031 61.5 48 C 61.5 40.542969 55.457031 34.5 48 34.5 C 40.542969 34.5 34.5 40.542969 34.5 48 C 34.5 55.457031 40.542969 61.5 48 61.5 Z M 51 12 C 51 12.550781 51 20.449219 51 21 C 51 22.65625 49.65625 24 48 24 C 46.34375 24 45 22.65625 45 21 C 45 20.449219 45 12.550781 45 12 C 45 10.34375 46.34375 9 48 9 C 49.65625 9 51 10.34375 51 12 Z M 75.578125 24.664062 C 75.1875 25.054688 69.601562 30.640625 69.214844 31.03125 C 68.042969 32.203125 66.140625 32.203125 64.972656 31.03125 C 63.800781 29.859375 63.800781 27.960938 64.972656 26.789062 C 65.359375 26.398438 70.945312 20.8125 71.335938 20.425781 C 72.507812 19.253906 74.40625 19.253906 75.578125 20.425781 C 76.75 21.59375 76.75 23.496094 75.578125 24.664062 Z M 84 51 C 83.449219 51 75.550781 51 75 51 C 73.34375 51 72 49.65625 72 48 C 72 46.34375 73.34375 45 75 45 C 75.550781 45 83.449219 45 84 45 C 85.65625 45 87 46.34375 87 48 C 87 49.65625 85.65625 51 84 51 Z M 71.335938 75.578125 C 70.945312 75.1875 65.359375 69.601562 64.96875 69.214844 C 63.796875 68.042969 63.796875 66.140625 64.96875 64.972656 C 66.140625 63.800781 68.039062 63.800781 69.210938 64.972656 C 69.601562 65.359375 75.1875 70.945312 75.574219 71.335938 C 76.746094 72.507812 76.746094 74.40625 75.574219 75.578125 C 74.40625 76.75 72.503906 76.75 71.335938 75.578125 Z M 45 84 C 45 83.449219 45 75.550781 45 75 C 45 73.34375 46.34375 72 48 72 C 49.65625 72 51 73.34375 51 75 C 51 75.550781 51 83.449219 51 84 C 51 85.65625 49.65625 87 48 87 C 46.34375 87 45 85.65625 45 84 Z M 20.421875 71.335938 C 20.8125 70.945312 26.398438 65.359375 26.785156 64.96875 C 27.957031 63.796875 29.859375 63.796875 31.027344 64.96875 C 32.199219 66.140625 32.199219 68.039062 31.027344 69.210938 C 30.640625 69.601562 25.054688 75.1875 24.664062 75.574219 C 23.492188 76.746094 21.59375 76.746094 20.421875 75.574219 C 19.25 74.40625 19.25 72.503906 20.421875 71.335938 Z M 12 45 C 12.550781 45 20.449219 45 21 45 C 22.65625 45 24 46.34375 24 48 C 24 49.65625 22.65625 51 21 51 C 20.449219 51 12.550781 51 12 51 C 10.34375 51 9 49.65625 9 48 C 9 46.34375 10.34375 45 12 45 Z M 24.664062 20.421875 C 25.054688 20.8125 30.640625 26.398438 31.03125 26.785156 C 32.203125 27.957031 32.203125 29.859375 31.03125 31.027344 C 29.859375 32.199219 27.960938 32.199219 26.789062 31.027344 C 26.398438 30.640625 20.8125 25.054688 20.425781 24.664062 C 19.253906 23.492188 19.253906 21.59375 20.425781 20.421875 C 21.59375 19.25 23.496094 19.25 24.664062 20.421875 Z M 24.664062 20.421875 "/>
+                        </g>
+                    </svg>
+                    <svg class="moon" aria-labelledby="moon" role="img" enable-background="new 0 0 91 91" height="91px" id="Layer_1" version="1.1" viewBox="0 0 91 91" width="91px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <title id="moon">Moon</title>
+                        <g>
+                            <path d="M7.04,35.045C4.237,46.792,6.176,58.927,12.5,69.216c8.292,13.488,22.706,21.543,38.559,21.543 c8.332,0,16.504-2.318,23.635-6.703c4.172-2.564,7.883-5.779,11.031-9.551c0.703-0.842,0.777-2.043,0.184-2.967 c-0.592-0.924-1.713-1.354-2.775-1.066c-2.932,0.801-5.961,1.205-9.008,1.205c-12.049,0-23.002-6.117-29.299-16.367 c-4.809-7.818-6.283-17.043-4.152-25.975c2.131-8.93,7.611-16.494,15.434-21.301c1.256-0.771,2.613-1.484,4.033-2.119 c1.002-0.447,1.598-1.492,1.473-2.58c-0.125-1.09-0.943-1.973-2.02-2.182c-2.838-0.549-5.74-0.826-8.625-0.826 c-8.33,0-16.501,2.316-23.631,6.697C17.051,13.349,9.842,23.3,7.04,35.045z M29.971,11.306 c6.337-3.895,13.599-5.955,20.999-5.955c0.035,0,0.068,0.002,0.104,0.002C43.39,10.87,38.005,18.874,35.787,28.169 c-2.443,10.236-0.752,20.811,4.759,29.773c7.219,11.746,19.771,18.76,33.58,18.76c0.783,0,1.568-0.023,2.35-0.07 c-1.396,1.145-2.869,2.193-4.414,3.143c-6.338,3.898-13.6,5.959-21.002,5.959c-14.094,0-26.908-7.158-34.278-19.148 c-5.622-9.145-7.345-19.932-4.854-30.372C14.418,25.772,20.826,16.927,29.971,11.306z"/>
+                        </g>
+                    </svg>
+                    <span class='switch-slider'></span>
+                </label>
+            </div>
+        </div>
+        <!-- End Fullscreen Menu -->
+
+        <!-- Start Main -->
+        <main id="main" tabindex="-1">
+
+            <!-- Start Hero Section -->
+            <div class="hero flex--row">
+                <div class="container flex--col">
+                    <section class="text--center flex--col">
+                        <h2>storyteller</h2>
+                        <p>
+                            One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections.
+                        </p>
+                        <button class="main--btn text--center">read the rest</button>
+                    </section>
+                </div>
+            </div>
+            <!-- End Hero Section -->
+
+            <!-- Start Who & Why Section -->
+            <div class="intro">
+                <section class="container text--center" data-aos="zoom-in">
+                    <img src="images/icon-broccoli.webp" alt="Broccoli Icon" loading="lazy" width="39" height="39">
+                    <h2>who & why</h2>
+                    <p>
+                        The gentlemen who rented the room would sometimes take their evening meal at home in the living room that was used by everyone, and so the door to this room was often kept closed in the evening. But Gregor found it easy to give up having the door open, he had, after all, often failed to make use of it when it was open and, without the family having noticed it, lain in his room in its darkest corner. One time, though, the charwoman left the door.
+                    </p>
+                </section>
+            </div>
+            <!-- End Who & Why Section -->
+
+            <!-- Start Services Section -->
+            <div class="services text--center">
+                <div class="container flex--row">
+                    <section data-aos="flip-up" data-aos-offset="100">
+                        <img src="./images/icon-clock.webp" alt="Clock Icon" loading="lazy" width="37" height="33">
+                        <h3>An Wow Feature</h3>
+                        <p>
+                            The gentlemen who rented the room would sometimes take their evening meal at home in the living.
+                        </p>
+                    </section>
+                    <section data-aos="flip-up" data-aos-offset="100" data-aos-delay="300">
+                        <img src="./images/icon-vector.webp" alt="Vector Icon" loading="lazy" width="36" height="33">
+                        <h3>A Beautiful Feature</h3>
+                        <p>
+                            The gentlemen who rented the room would sometimes take their evening meal at home in the living.
+                        </p>
+                    </section>
+                    <section data-aos="flip-up" data-aos-offset="100" data-aos-delay="600">
+                        <img src="./images/icon-tractor.webp" alt="Tractor Icon" loading="lazy" width="47" height="38">
+                        <h3>An Amazing Feature</h3>
+                        <p>
+                            The gentlemen who rented the room would sometimes take their evening meal at home in the living.
+                        </p>
+                    </section>
+                </div>
+            </div>
+            <!-- End Services Section -->
+
+            <!-- Start Featured Articles Section -->
+            <div class="articles">
+                <div class="container">
+                    <section class="text--center" data-aos="zoom-in">
+                        <h2>Featured Articles</h2>
+                        <p>
+                            The gentlemen who rented the room would sometimes take their evening meal at home in the living room that was used by everyone, and so the door to this room was often kept closed in the
+                        </p>
+                    </section>
+                    <div id="articles__slider" class="splide articles__slider" aria-label="Articles">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide">
+                                    <article class="splide__slide__container article-card">
+                                        <div class="tags">
+                                            <a href="#" title="Comic" rel="tag">comic</a>
+                                        </div>
+                                        <h3>
+                                            <a href="#">A million ways to die in the wild wild wild west</a>
+                                        </h3>
+                                        <div class="author flex--row">
+                                            <a class="avatar" href="#">
+                                                <img src="./images/profile-1.webp" width="60" height="60" alt="Jimmy Jefferson" loading="lazy">
+                                            </a>
+                                            <div class="info">
+                                                <a class="author__name" href="#">jimmy jefferson</a>
+                                                <time datetime="2013-08-21">21/08/2013</time>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </li>
+
+                                <li class="splide__slide">
+                                    <article class="article-card">
+                                        <div class="tags">
+                                            <a href="#" title="Lifestyle" rel="tag">lifestyle</a>
+                                        </div>
+                                        <h3>
+                                            <a href="#">The most comfortable chair comes with no backpain</a>
+                                        </h3>
+                                        <div class="author flex--row">
+                                            <a class="avatar" href="#">
+                                                <img src="./images/profile-2.webp" width="60" height="60" alt="Gail Gutierrez" loading="lazy">
+                                            </a>
+                                            <div class="info">
+                                                <a class="author__name" href="#">gail gutierrez</a>
+                                                <time datetime="2013-08-21">21/08/2013</time>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </li>
+
+                                <li class="splide__slide">
+                                    <article class="article-card">
+                                        <div class="tags">
+                                            <a href="#" title="Travel" rel="tag">travel</a>
+                                        </div>
+                                        <h3>
+                                            <a href="#">journey to the center of the earth with jefferson</a>
+                                        </h3>
+                                        <div class="author flex--row">
+                                            <a class="avatar" href="#">
+                                                <img src="./images/profile-3.webp" width="60" height="60" alt="Mason Johnston" loading="lazy">
+                                            </a>
+                                            <div class="info">
+                                                <a class="author__name" href="#">mason johnston</a>
+                                                <time datetime="2013-08-21">21/08/2013</time>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </li>
+
+                                <li class="splide__slide">
+                                    <article class="article-card">
+                                        <div class="tags">
+                                            <a href="#" title="Comic" rel="tag">comic</a>
+                                        </div>
+                                        <h3>
+                                            <a href="#">A million ways to die in the wild wild wild west</a>
+                                        </h3>
+                                        <div class="author flex--row">
+                                            <a class="avatar" href="#">
+                                                <img src="./images/profile-1.webp" width="60" height="60" alt="Jimmy Jefferson" loading="lazy">
+                                            </a>
+                                            <div class="info">
+                                                <a class="author__name" href="#">jimmy jefferson</a>
+                                                <time datetime="2013-08-21">21/08/2013</time>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </li>
+
+                                <li class="splide__slide">
+                                    <article class="article-card">
+                                        <div class="tags">
+                                            <a href="#" title="Lifestyle" rel="tag">lifestyle</a>
+                                        </div>
+                                        <h3>
+                                            <a href="#">The most comfortable chair comes with no backpain</a>
+                                        </h3>
+                                        <div class="author flex--row">
+                                            <a class="avatar" href="#">
+                                                <img src="./images/profile-2.webp" width="60" height="60" alt="Gail Gutierrez" loading="lazy">
+                                            </a>
+                                            <div class="info">
+                                                <a class="author__name" href="#">gail gutierrez</a>
+                                                <time datetime="2013-08-21">21/08/2013</time>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </li>
+
+                                <li class="splide__slide">
+                                    <article class="article-card">
+                                        <div class="tags">
+                                            <a href="#" title="Travel" rel="tag">travel</a>
+                                        </div>
+                                        <h3>
+                                            <a href="#">journey to the center of the earth with jefferson</a>
+                                        </h3>
+                                        <div class="author flex--row">
+                                            <a class="avatar" href="#">
+                                                <img src="./images/profile-3.webp" width="60" height="60" alt="Mason Johnston" loading="lazy">
+                                            </a>
+                                            <div class="info">
+                                                <a class="author__name" href="#">mason johnston</a>
+                                                <time datetime="2013-08-21">21/08/2013</time>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Featured Articles Section -->
+
+            <!-- Start Clients Section -->
+            <div class="clients">
+                <div class="container text--center">
+                    <h2>clients</h2>
+                    <div id="clients__slider" class="splide clients__slider" aria-label="Clients">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide flex--col">
+                                    <a href="#" title="Go To Client 1" target="_blank" rel="nofollow">
+                                        <img src="./images/logo-1.webp" alt="Logo 1" loading="lazy">
+                                    </a>
+                                </li>
+                                <li class="splide__slide flex--col">
+                                    <a href="#" title="Go To Client 2" target="_blank" rel="nofollow">
+                                        <img src="./images/logo-2.webp" alt="Logo 2" loading="lazy">
+                                    </a>
+                                </li>
+                                <li class="splide__slide flex--col">
+                                    <a href="#" title="Go To Client 3" target="_blank" rel="nofollow">
+                                        <img src="./images/logo-3.webp" alt="Logo 3" loading="lazy">
+                                    </a>
+                                </li>
+                                <li class="splide__slide flex--col">
+                                    <a href="#" title="Go To Client 4" target="_blank" rel="nofollow">
+                                        <img src="./images/logo-4.webp" alt="Logo 4" loading="lazy">
+                                    </a>
+                                </li>
+                                <li class="splide__slide flex--col">
+                                    <a href="#" title="Go To Client 5" target="_blank" rel="nofollow">
+                                        <img src="./images/logo-5.webp" alt="Logo 5" loading="lazy">
+                                    </a>
+                                </li>
+                                <li class="splide__slide flex--col">
+                                    <a href="#" title="Go To Client 6" target="_blank" rel="nofollow">
+                                        <img src="./images/logo-6.webp" alt="Logo 6" loading="lazy">
+                                    </a>
+                                </li>
+                                <li class="splide__slide flex--col">
+                                    <a href="#" title="Go To Client 7" target="_blank" rel="nofollow">
+                                        <img src="./images/logo-7.webp" alt="Logo 7" loading="lazy">
+                                    </a>
+                                </li>
+                                <li class="splide__slide flex--col">
+                                    <a href="#" title="Go To Client 8" target="_blank" rel="nofollow">
+                                        <img src="./images/logo-8.webp" alt="Logo 8" loading="lazy">
+                                    </a>
+                                </li>
+                                <li class="splide__slide flex--col">
+                                    <a href="#" title="Go To Client 9" target="_blank" rel="nofollow">
+                                        <img src="./images/logo-9.webp" alt="Logo 9" loading="lazy">
+                                    </a>
+                                </li>
+                                <li class="splide__slide flex--col">
+                                    <a href="#" title="Go To Client 10" target="_blank" rel="nofollow">
+                                        <img src="./images/logo-10.webp" alt="Logo 10" loading="lazy">
+                                    </a>
+                                </li>
+                                <li class="splide__slide flex--col">
+                                    <a href="#" title="Go To Client 11" target="_blank" rel="nofollow">
+                                        <img src="./images/logo-11.webp" alt="Logo 11" loading="lazy">
+                                    </a>
+                                </li>
+                                <li class="splide__slide flex--col">
+                                    <a href="#" title="Go To Client 12">
+                                        <img src="./images/logo-12.webp" alt="Logo 12" loading="lazy">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Clients Section -->
+
+            <!-- Start Portfolio Section -->
+            <div class="portfolio text--center">
+                <div class="container">
+                    <section data-aos="zoom-in">
+                        <h2>portfolio & screenshots</h2>
+                        <p>
+                            The gentlemen who rented the room would sometimes take their evening meal at home in the living room that was used by everyone, and so the door to this room was often kept closed in the
+                        </p>
+                    </section>
+                </div>
+                <div class="projects">
+                    <ul class="tags">
+                        <li class="tag" data-value="art"><button>art</button></li>
+                        <li class="tag" data-value="mystery"><button>mystery</button></li>
+                        <li class="tag" data-value="illusion"><button>illusion</button></li>
+                        <li class="tag" data-value="travel"><button>travel</button></li>
+                        <li class="tag" data-value="paintings"><button>paintings</button></li>
+                    </ul>
+                    <div id="portfolio__slider" class="splide portfolio__slider" aria-label="Portfolio">
+                        <div class="splide__track"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Portfolio Section -->
+
+            <!-- Start Quote Section -->
+            <div class="quote">
+                <div class="container text--center">
+                    <img src="./images/icon-quote.svg" alt="Quotation Mark" loading="lazy">
+                    <blockquote>
+                        <p>
+                            Happiness cannot be traveled to, owned, earned, or worn. It is the spiritual experience of living every minute with love, grace & gratitude.
+                        </p>
+                        <footer><strong><em>Denis Waitley</em></strong></footer>
+                    </blockquote>
+                </div>
+            </div>
+            <!-- End Quote Section -->
+
+            <!-- Start Team Members Section -->
+            <div class="team">
+                <div class="container text--center">
+                    <section data-aos="zoom-in">
+                        <h2>team members</h2>
+                        <p>
+                            The gentlemen who rented the room would sometimes take their evening meal at home in the living room that was used by everyone, and so the door to this room was often kept closed in the
+                        </p>
+                    </section>
+                    <div class="team__members flex--row">
+                        <div class="team-member flex--col">
+                            <img src="./images/team-1.webp" alt="James Philly" loading="lazy">
+                            <strong>James Philly</strong>
+                            <p>Lead Developer</p>
+                        </div>
+
+                        <div class="team-member flex--col">
+                            <img src="./images/team-2.webp" alt="Cactus Jack" loading="lazy">
+                            <strong>Cactus Jack</strong>
+                            <p>3D Model Designer</p>
+                        </div>
+
+                        <div class="team-member flex--col">
+                            <img src="./images/team-3.webp" alt="Jack Sparrow" loading="lazy">
+                            <strong>Jack Sparrow</strong>
+                            <p>Master of All Trade</p>
+                        </div>
+
+                        <div class="team-member flex--col">
+                            <img src="./images/team-4.webp" alt="Yaga Squarehead" loading="lazy">
+                            <strong>Yaga Squarehead</strong>
+                            <p>Manages Money</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Team Members Section -->
+
+            <!-- Start Facts & Numbers Section -->
+            <div class="facts text--center">
+                <div class="container">
+                    <h2>Facts & Numbers</h2>
+                    <div class="numbers flex--row">
+                        <div>
+                            <strong class="counter" data-target="2110">0</strong>
+                            <p>successful projects</p>
+                        </div>
+                        <div>
+                            <strong class="counter" data-target="1250">0</strong>
+                            <p>awesome clients</p>
+                        </div>
+                        <div>
+                            <strong class="counter" data-target="130">0</strong>
+                            <p>open source plugins</p>
+                        </div>
+                        <div>
+                            <strong class="counter" data-target="1113">0</strong>
+                            <p>open source themes</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Facts & Numbers Section -->
+
+            <!-- Start Blog Section -->
+            <div class="blog">
+                <div class="container text--center">
+                    <article class="flex--row">
+                        <figure data-aos="fade-left">
+                            <img src="./images/post-1.webp" alt="Post 1" loading="lazy">
+                        </figure>
+                        <div class="post flex--col" data-aos="fade-right">
+                            <header>
+                                <a href="#" rel="tag">Travel</a>
+                                <time datetime="2014-03-21"> / 21st March, 2014</time>
+                            </header>
+                            <h2><a href="#">A New Product Is Coming</a></h2>
+                            <p>
+                                The office assistant was the boss's man, spineless, and with no understanding. What about if he reported sick? But that would be extremely strained and suspicious as in fifteen years of service Gregor had never.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="flex--row">
+                        <figure class="change-aos" data-aos="fade-left">
+                            <img src="./images/post-2.webp" alt="Post 2" loading="lazy">
+                        </figure>
+                        <div class="post flex--col change-aos" data-aos="fade-right">
+                            <header>
+                                <a href="#" rel="tag">Gadget</a>
+                                <time datetime="2014-03-03"> / 3rd March, 2014</time>
+                            </header>
+                            <h2><a href="#">Jimmy’s New Xbox Controller</a></h2>
+                            <p>
+                                The office assistant was the boss's man, spineless, and with no understanding. What about if he reported sick? But that would be extremely strained and suspicious as in fifteen years of service Gregor had never.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="flex--row">
+                        <figure data-aos="fade-left">
+                            <img src="./images/post-3.webp" alt="Post 3" loading="lazy">
+                        </figure>
+                        <div class="post flex--col" data-aos="fade-right">
+                            <header>
+                                <a href="#" rel="tag">Travel</a>
+                                <time datetime="2014-03-01"> / 1st March, 2014</time>
+                            </header>
+                            <h2><a href="#">A New Product Is Coming</a></h2>
+                            <p>
+                                The office assistant was the boss's man, spineless, and with no understanding. What about if he reported sick? But that would be extremely strained and suspicious as in fifteen years of service Gregor had never.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+                <div class="previous-posts">
+                    <div class="container">
+                        <div id="blog__slider" class="splide blog__slider" aria-label="Blog">
+                            <div class="splide__track">
+                                <ul class="splide__list">
+                                    <li class="splide__slide">
+                                        <section class="pre-post">
+                                            <h3><a href="#">another day in paradise</a></h3>
+                                            <a href="#" rel="tag">Travel</a>
+                                            <time datetime="2014-02-21"> / 21st February, 2014</time>
+                                        </section>
+                                    </li>
+
+                                    <li class="splide__slide tag-img" data-tag="art">
+                                        <section class="pre-post">
+                                            <h3><a href="#">jimmy's new book on </a></h3>
+                                            <a href="#" rel="tag">Travel</a>
+                                            <time datetime="2014-02-15"> / 15 February, 2014</time>
+                                        </section>
+                                    </li>
+
+                                    <li class="splide__slide tag-img" data-tag="illusion">
+                                        <section class="pre-post">
+                                            <h3><a href="#">sarah's new house</a></h3>
+                                            <a href="#" rel="tag">Travel</a>
+                                            <time datetime="2014-02-01"> / 1st February, 2014</time>
+                                        </section>
+                                    </li>
+
+                                    <li class="splide__slide">
+                                        <section class="pre-post">
+                                            <h3><a href="#">another day in paradise</a></h3>
+                                            <a href="#" rel="tag">Travel</a>
+                                            <time datetime="2014-02-21"> / 21st February, 2014</time>
+                                        </section>
+                                    </li>
+
+                                    <li class="splide__slide">
+                                        <section class="pre-post">
+                                            <h3><a href="#">jimmy's new book on </a></h3>
+                                            <a href="#" rel="tag">Travel</a>
+                                            <time datetime="2014-02-15"> / 15 February, 2014</time>
+                                        </section>
+                                    </li>
+
+                                    <li class="splide__slide">
+                                        <section class="pre-post">
+                                            <h3><a href="#">sarah's new house</a></h3>
+                                            <a href="#" rel="tag">Travel</a>
+                                            <time datetime="2014-02-01"> / 1st February, 2014</time>
+                                        </section>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Blog Section -->
+
+            <!-- Start Reviews Section -->
+            <div class="reviews text--center">
+                <div class="container">
+                    <div id="reviews__slider" class="splide reviews__slider" aria-label="Reviews">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide">
+                                    <div class="review flex--col">
+                                        <a class="social-icon" href="#" title="Go To Linkedin" target="_blank" rel="nofollow">
+                                            <img class="linkedin" src="./images/icon-linkedin.svg" alt="Linkedin" loading="lazy">
+                                        </a>
+                                        <a class="avatar" href="#" title="Go To @jimmy_jefferson" target="_blank" rel="nofollow">
+                                            <img src="./images/profile-1.webp" width="60" height="60" alt="Jimmy Jefferson" loading="lazy">
+                                        </a>
+                                        <blockquote>
+                                            <p>
+                                                Happiness cannot be traveled to, owned, earned, or worn. It is the spiritual experience of living every minute with love, grace & gratitude.
+                                            </p>
+                                            <footer><strong><a href="#" title="Go To @jimmy_jefferson" target="_blank" rel="nofollow">@jimmy_jefferson</a></strong></footer>
+                                        </blockquote>
+                                    </div>
+                                </li>
+
+                                <li class="splide__slide">
+                                    <div class="review flex--col">
+                                        <a class="social-icon" href="#" title="Go To Twitter" target="_blank" rel="nofollow">
+                                            <img class="twitter" src="./images/icon-twitter.svg" alt="Twitter" loading="lazy">
+                                        </a>
+                                        <a class="avatar" href="#" title="Go To @loveless" target="_blank" rel="nofollow">
+                                            <img src="./images/profile-2.webp" width="60" height="60" alt="Gail Gutierrez" loading="lazy">
+                                        </a>
+                                        <blockquote>
+                                            <p>
+                                                Happiness cannot be traveled to, owned, earned, or worn. It is the spiritual experience of living every minute with love, grace & gratitude.
+                                            </p>
+                                            <footer><strong><a href="#" title="Go To @loveless" target="_blank" rel="nofollow">@loveless</a></strong></footer>
+                                        </blockquote>
+                                    </div>
+                                </li>
+
+                                <li class="splide__slide">
+                                    <div class="review flex--col">
+                                        <a class="social-icon" href="#" title="Go To Facebook" target="_blank" rel="nofollow">
+                                            <img class="facebook" src="./images/icon-facebook.svg" alt="Facebook" loading="lazy">
+                                        </a>
+                                        <a class="avatar" href="#" title="Go To @mason_johnston" target="_blank" rel="nofollow">
+                                            <img src="./images/profile-3.webp" width="60" height="60" alt="Mason Johnston" loading="lazy">
+                                        </a>
+                                        <blockquote>
+                                            <p>
+                                                Happiness cannot be traveled to, owned, earned, or worn. It is the spiritual experience of living every minute with love, grace & gratitude.
+                                            </p>
+                                            <footer><strong><a href="#" title="Go To @mason_johnston" target="_blank" rel="nofollow">@mason_johnston</a></strong></footer>
+                                        </blockquote>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Reviews Section -->
+        </main>
+        <!-- End Main -->
+
+        <!-- Start Footer -->
+        <footer class="site-footer">
+            <div class="container">
+                <div class="footer__widgets flex--row">
+
+                    <!-- Start Contact Form Section -->
+                    <div class="contact">
+                        <div class="contact__wrap">
+                            <h2>unicorn</h2>
+                        <p>
+                            One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin.
+                        </p>
+                        <form action="">
+                            <div class="flex--row">
+                                <label for="email">
+                                    <input id="email" type="email" name="email" placeholder="Email" aria-required="true" autocomplete="email" required>
+                                    <span class="placeholder">email</span>
+                                </label>
+                                <label for="subject">
+                                    <input id="subject" type="text" placeholder="Subject" required>
+                                    <span class="placeholder">subject</span>
+                                </label>
+                            </div>
+                            <label for="message">message</label>
+                            <textarea name="contact-message" id="message" cols="30" rows="10" required></textarea>
+                            <button type="submit">send <span class="arrow"></span></button>
+                        </form>
+                        </div>
+                    </div>
+                    <!-- End Contact Form Section -->
+
+                    <!-- Start Links Section -->
+                    <div class="links flex--row">
+                        <div>
+                            <h3>links</h3>
+                            <ul>
+                                <li><a href="./index.html" title="Home">Home</a></li>
+                                <li><a href="./p/test.html" title="About">About</a></li>
+                                <li><a href="./p/test.html" title="Services">Services</a></li>
+                                <li><a href="./p/test.html" title="Menu">Menu</a></li>
+                                <li><a href="./p/test.html" title="Restaurants">Restaurants</a></li>
+                                <li><a href="./p/test.html" title="Work Hours">Work Hours</a></li>
+                                <li><a href="./p/test.html" title="Call Hours">Call Hours</a></li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <h3>friends</h3>
+                            <ul>
+                                <li><a href="./index.html" title="Home">Home</a></li>
+                                <li><a href="./p/test.html" title="About">About</a></li>
+                                <li><a href="./p/test.html" title="Services">Services</a></li>
+                                <li><a href="./p/test.html" title="Menu">Menu</a></li>
+                                <li><a href="./p/test.html" title="Restaurants">Restaurants</a></li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <h3>social</h3>
+                            <ul>
+                                <li><a href="https://facebook.com" title="Facebook" target="_blank" rel="nofollow">Facebook</a></li>
+                                <li><a href="https://twitter.com" title="Twitter" target="_blank" rel="nofollow">Twitter</a></li>
+                                <li><a href="https://github.com" title="GitHub" target="_blank" rel="nofollow">GitHub</a></li>
+                                <li><a href="https://www.pinterest.com" title="Pinterest" target="_blank" rel="nofollow">Pinterest</a></li>
+                                <li><a href="https://www.google.com" title="Google Plus" target="_blank" rel="nofollow">Google Plus</a></li>
+                                <li><a href="https://dribbble.com" title="Dribbble" target="_blank" rel="nofollow">Dribbble</a></li>
+                                <li><a href="https://www.flickr.com" title="Flickr" target="_blank" rel="nofollow">Flickr</a></li>
+                                <li><a href="https://www.instagram.com" title="Others" target="_blank" rel="nofollow">Others</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- End Links Section -->
+                </div>
+
+                <!-- Start Copyright Section -->
+                <div class="copyright flex--row text--center">
+                    <p>
+                        One morning, when Gregor Samsa woke from troubled dreams, he found ©2015 Your Awesome Company
+                    </p>
+                    <ul class="footer__menu flex--row">
+                        <li><a href="./p/test.html" title="terms">terms</a></li>
+                        <li><a href="./p/test.html" title="privacy policy">privacy policy</a></li>
+                        <li><a href="./p/test.html" title="contact">contact</a></li>
+                        <li><a href="./p/test.html" title="job">job</a></li>
+                    </ul>
+                </div>
+                <!-- End Copyright Section -->
+            </div>
+        </footer>
+        <!-- End Footer -->
+
+    </div>
+
+    <!-- Start Go To Top Button -->
+    <button class="top-btn" title="Go to top" aria-label="Go to top"><span></span></button>
+    <!-- End Go To Top Button -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/splidejs/4.1.4/js/splide.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+{
+  "name": "unicorn",
+  "version": "1.0.0",
+  "description": "A static business/service website built based on the Unicorn template",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "sass": "sass --watch ./src/style/sass/:./src/style/css/",
+    "gulp": "gulp"
+  },
+  "author": "Basma Khalil",
+  "license": "CC BY-NC-SA",
+  "homepage": "https://unicorn-theme.netlify.app",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/basma-khalil/unicorn.git"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.5",
+    "@babel/preset-env": "^7.18.2",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-ignore": "^3.0.0",
+    "gulp-imagemin": "^8.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-webp": "^4.0.1",
+    "gulp-wrapper": "^1.0.0",
+    "sass": "^1.52.3"
+  },
+  "dependencies": {
+    "gulp-replace": "^1.1.4"
+  }
+}

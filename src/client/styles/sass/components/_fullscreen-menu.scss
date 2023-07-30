@@ -1,0 +1,95 @@
+/* ---- Fullscreen Menu ---- */
+
+.fullscreen-menu {
+    position: fixed;
+    visibility: hidden;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: var(--main-bg-color);
+    opacity: 0;
+    overflow: auto;
+    transition: 0.5s ease-in-out;
+    z-index: 99;
+
+    ul li {
+        &.lang {
+            font-family: 'Almarai', sans-serif;
+        }
+
+        a {
+            font-size: 2rem;
+            font-weight: bold;
+            text-transform: uppercase;
+
+            @include breakpoint(medium) {
+                font-size: 3rem;
+            }
+        }
+    }
+
+    .theme {
+        margin-top: 2rem;
+
+        .theme-btn {
+            position: absolute;
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .toggle-theme {
+            position: relative;
+            width: 80px;
+            height: 40px;
+            padding: 7px;
+            background: var(--dark-bg-color);
+            border-radius: 40px;
+            cursor: pointer;
+
+            svg {
+                width: 25px;
+                height: 25px;
+                transition: fill 0.3s;
+                z-index: 1;
+
+                &:hover {
+                    fill: var(--minor-color);
+                }
+            }
+
+            .sun {
+                fill: var(--main-font-color);
+            }
+
+            .moon {
+                fill: var(--main-bg-color);
+            }
+
+            .switch-slider {
+                position: absolute;
+                top: 5px;
+                left: 5px;
+                width: 30px;
+                height: 30px;
+                background: #fff;
+                border-radius: 50%;
+                transition: transform 0.5s;
+            }
+        }
+
+        .theme-btn:focus + .toggle-theme {
+            box-shadow: 0 -5px 3px -3px var(--minor-color),
+                0 5px 3px -3px var(--minor-color);
+        }
+
+        .theme-btn:checked + .toggle-theme .switch-slider {
+            transform: translateX(40px);
+        }
+
+        @include breakpoint(medium) {
+            margin-top: 3rem;
+        }
+    }
+}

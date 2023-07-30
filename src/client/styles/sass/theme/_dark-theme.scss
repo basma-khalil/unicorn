@@ -1,0 +1,38 @@
+/* ---- Dark Theme ---- */
+
+.dark-theme {
+	.splide__arrow svg {
+		fill: var(--main-font-color);
+	}
+
+	.site-header.change--bg {
+        background: var(--dark-bg-color);
+    }
+
+	.hero::before {
+		background-image: linear-gradient(var(--dark-overlay),
+			var(--dark-overlay)), url('../images/hero-576w.webp');
+
+		@media (min-width: $x-small-screen) and (max-width: $medium-screen) {
+			background-image: linear-gradient(var(--dark-overlay),
+				var(--dark-overlay)), url('../images/hero-1080w.webp');
+		}
+
+		@include breakpoint(medium) {
+			background-image: linear-gradient(var(--dark-overlay),
+				var(--dark-overlay)), url('../images/hero-1500w.webp');
+		}
+
+		@include breakpoint(large) {
+			background-image: linear-gradient(var(--dark-overlay),
+				var(--dark-overlay)), url('../images/hero-2000w.webp');
+		}
+	}
+
+	.intro img,
+	.services img,
+	.team img,
+	.social-icon img {
+		filter: invert(1);
+	}
+}

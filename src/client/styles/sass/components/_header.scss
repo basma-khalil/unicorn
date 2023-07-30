@@ -1,0 +1,84 @@
+/* ---- Header ---- */
+
+.site-header {
+    grid-area: hd;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: transparent;
+    text-transform: uppercase;
+    transition: background 0.5s, box-shadow 0.5s;
+    z-index: 100;
+
+    &.change--bg {
+        background: var(--main-bg-color);
+        box-shadow: 0 3px 5px 0.3px rgba(0,0,0,0.1);
+    }
+
+    .container {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .header__logo {
+        h1, h2 {
+            font-size: 1.25rem;
+        }
+    }
+
+    nav {
+        ul {
+            display: none;
+
+            li {
+                display: inline-block;
+                margin-right: 1rem;
+                padding: 0.5rem;
+
+                a {
+                    display: block;
+                    font-weight: bold;
+                }
+            }
+
+            @include breakpoint(medium) {
+                display: block;
+            }
+        }
+
+        .toggle-menu {
+            display: inline-block;
+            background: transparent;
+            border: 0;
+            cursor: pointer;
+
+            span {
+                display: block;
+                width: 1.5rem;
+                height: 3px;
+                margin: 4px auto;
+                background: var(--main-font-color);
+                transition: background 0.3s ease-out, transform 0.3s linear;
+            }
+
+            &:hover span {
+                background: var(--minor-color);
+            }
+
+            &.open {
+                span:first-child {
+                    transform: translateY(7px) rotate3d(0, 0, 1, 45deg);
+                }
+
+                span:nth-child(2) {
+                    background-color: transparent !important;
+                }
+
+                span:last-child {
+                    transform: translateY(-7px) rotate3d(0, 0, 1, -45deg);
+                }
+            }
+        }
+    }
+}

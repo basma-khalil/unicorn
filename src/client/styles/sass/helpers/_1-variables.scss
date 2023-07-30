@@ -1,0 +1,28 @@
+/* ---- Main Variables ---- */
+
+/* Colors */
+:root {
+    --main-bg-color: #fff;
+    --light-bg-color: #efefef;
+    --dark-bg-color: #222;
+    --main-font-color: #212121;
+    --minor-font-color: #eee;
+    --dark-overlay: rgba(33,33,33,0.7);
+    --light-overlay: rgba(239,239,239,0.4);
+    --minor-color: #ca4b20;
+    --minor-color-filter: invert(35%) sepia(29%) saturate(2942%)
+                            hue-rotate(346deg) brightness(93%) contrast(93%);
+}
+
+.dark-theme {
+    --main-bg-color: #444;
+    --light-bg-color: #757575;
+    --main-font-color: #fff;
+}
+
+
+/* Media Query Breakpoints */
+$x-small-screen: 576px;
+$small-screen: 768px;
+$medium-screen: 992px;
+$large-screen: 1200px;
