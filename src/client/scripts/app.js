@@ -86,11 +86,15 @@ const toggleMenu = () => {
   // Accessibility
   if (menuBtn.classList.contains('open')) {
 
+    menuBtn.setAttribute('aria-expanded', 'true');
+
     documentLang === 'ar'
       ? menuBtn.setAttribute('aria-label', 'اغلق القائمة')
       : menuBtn.setAttribute('aria-label', 'close menu');
 
   } else {
+
+    menuBtn.setAttribute('aria-expanded', 'false');
 
     documentLang === 'ar'
       ? menuBtn.setAttribute('aria-label', 'افتح القائمة')
