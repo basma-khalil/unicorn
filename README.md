@@ -1,6 +1,8 @@
 # Unicorn Theme
 
-A static business/service website built based on the Unicorn template.
+A static business/service website built based on the Unicorn template
+
+![Unicorn responsive](Screenshots/unicorn-responsive.png)
 
 ## Table of Contents
 
@@ -8,7 +10,7 @@ A static business/service website built based on the Unicorn template.
   - [Table of Contents](#table-of-contents)
   - [About the Project](#about-the-project)
     - [Description](#description)
-    - [Live preview](#live-preview)
+    - [Preview](#preview)
     - [Built With](#built-with)
     - [Features](#features)
     - [Usability](#usability)
@@ -26,7 +28,7 @@ A static business/service website built based on the Unicorn template.
 
 This project converted the Unicorn design mockup into a website built with semantic HTML, Sass, and ES6, along with using the Gulp toolkit to customize and optimize the code for production deployment.
 
-### Live preview
+### Preview
 
 <video autoplay loop muted playsinline src="screenshots/unicorn-preview.mp4"></video>
 
@@ -35,7 +37,7 @@ https://github.com/basma-khalil/unicorn/assets/110143256/e2696f42-0b2c-49c5-8521
 
 ### Built With
 
-[![Built With](https://skillicons.dev/icons?i=html,css,js,sass,gulp,nodejs)](https://skillicons.dev)
+[![Built With](https://skillicons.dev/icons?i=html,css,js,sass,gulp,netlify)](https://skillicons.dev)
 
 ### Features
 
@@ -102,4 +104,4 @@ This code is licensed under the **Attribution-NonCommercial-ShareAlike** License
 
 ## Demo
 
-For Demo of this template you can visit [https://unicorn-theme.netlify.app](https://unicorn-theme.netlify.app "Go to website")
+For Demo of this template you can visit [bk-unicorn.netlify.app](https://bk-unicorn.netlify.app "Go to website")
